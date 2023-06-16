@@ -2,7 +2,7 @@
 All about birds in Melbourne according to a 2019 study in the CBD.
 
 # Project setup 📽
-1. NodeHS with version specified in `.nvmrc`
+1. NodeJS with version specified in `.nvmrc`
 2. `pnpm` latest version
 
 # Install and run project 🏃
