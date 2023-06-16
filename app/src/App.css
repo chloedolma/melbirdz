@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+:root {
+  --white: #ffffff;
+  --green: #48c472;
+
+  --body: #c9e265;
+  --input-search: #48c472;
+  --border: #c9e265;
+  --svg: #359254;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Nunito', normal;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Nunito', normal;
+  display: block;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body);
+  cursor: auto;
+}
+
+.App-link {
+  color: #61dafb;
+}
+

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+:root {
+    --white: #ffffff;
+    --green: #48c472;
+
+    --body: #c9e265;
+    --input-search: #48c472;
+    --border: #c9e265;
+    --svg: #359254;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Nunito', normal;
+}
+
+html,
+body {
+    margin: 0;
+    display: block;
+    background-color: var(--body);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: var(--white);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.navbar div:hover {
+    background-color: var(--green);
+    cursor: pointer;
+    /* border-bottom: 2px solid var(--white); */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+    .tree {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .tree {
+        width: 30%;
+    }
+}
+
+.tree:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.form {
+    display: flex;
+    height: 96px;
+}
+
+.form input[type="search"] {
+    font-size: 40px;
+    line-height: 1;
+    padding: 6px 10px;
+    color: var(--input-search);
+    border-width: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.form input[type="search"]::placeholder {
+    color: var(--input-search);
+}
+
+button {
+    background-color: var(--input-search);
+    border: var(--border);
+    width: 96px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button svg {
+    color: var(--svg);
+    fill: var(--border);
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--input-search);
+  color: var(--white);
+  font-size: 8px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+h2 {
+    color: --var(white)
+}

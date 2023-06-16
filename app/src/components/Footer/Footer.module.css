@@ -1,0 +1,14 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--input-search);
+  color: var(--white);
+  font-size: 8px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+h2 {
+  color: --var(white)
+}

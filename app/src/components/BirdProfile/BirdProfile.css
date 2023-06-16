@@ -1,0 +1,29 @@
+.Bird-box {
+  /* width: 60%; */
+  height: fit-content;
+  padding: 20px;
+  margin: 40px;
+  background-color: #48c472;
+  border-radius: 5%;
+  flex-basis: 40%;
+  justify-content: center;
+}
+
+.Bird-img-container {
+  justify-content: center;
+}
+
+.Bird-image {
+  width: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+h2 {
+  font-style: bold;
+}
+
+h3 {
+  font-style: italic;
+}

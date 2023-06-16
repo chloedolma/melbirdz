@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Melbirdz</title>
+    <link rel="icon" href="icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header">
+        <div>
+          <a href="index.html">
+            <img
+              src="logo.png"
+              alt="siteLogo"
+              id="logo"
+              width="200"
+              height="100"
+            />
+          </a>
+        </div>
+
+        <div class="navbar">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="random.html">Random Bird</a></div>
+          <div><a onclick="healthCheck()">Health Check</a></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <img src="tree.png" alt="treeIcon" class="tree" />
+
+        <form method="get" class="form" id="birdSearchForm" action="javascript:void(0);">
+          <input
+            type="search"
+            placeholder="Search for a bird..."
+            id="birdSearchBar"
+            name="q"
+            required
+            pattern="^[A-Za-z]+$"
+            onkeyup="getInputAndSearchBird()"
+            />
+
+          <button type="submit" aria-label="search" id="searchButton" onclick="getInputAndSearchBird()">
+            <svg viewBox="0 0 1024 1024">
+              <path
+                class="path1"
+                d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <h2>&copy Chloe - part time bird fanatic</h2>
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

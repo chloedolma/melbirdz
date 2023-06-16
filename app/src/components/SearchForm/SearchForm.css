@@ -1,0 +1,87 @@
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+  .Form-tree {
+      width: 50%;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .Form-tree {
+      width: 30%;
+  }
+}
+
+.Form-tree:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-50px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.Form-search {
+  display: flex;
+  height: 96px;
+}
+
+#searchBar {
+  font-size: 40px;
+  line-height: 1;
+  padding: 6px 10px;
+  color: var(--input-search);
+  border-width: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#searchBar::placeholder {
+  color: var(--input-search);
+}
+
+.Form-searchbutton {
+  background-color: var(--input-search);
+  border: var(--border);
+  width: 96px;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.Form-searchbutton:hover {
+  cursor: pointer;
+}
+
+.Form-searchbutton svg {
+  color: var(--svg);
+  fill: var(--border);
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+}
+
+.BirdProfile-section {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-flow: column wrap; */
+  flex-wrap: wrap;
+  justify-content: center;
+}

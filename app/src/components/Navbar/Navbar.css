@@ -1,0 +1,43 @@
+nav  {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items:center;
+}
+
+.Nav-logo {
+  height: 100px;
+}
+
+.NavLinks-List {
+  height: 100%;
+}
+
+.NavLinks-List ul {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+  margin-block-start:0;
+  margin-block-end: 0;
+}
+
+.NavLinks-List ul li {
+  display: flex;
+  list-style-type: none;
+  padding: 0 20px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 24px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.NavLinks-List ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.NavLinks-List ul li:hover {
+  background-color: var(--green);
+}

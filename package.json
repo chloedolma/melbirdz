@@ -1,0 +1,27 @@
+{
+    "name": "@anzx/chloe",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "clean": "rm -rf **/node_modules",
+        "dev": "turbo run dev",
+        "test": "turbo run test"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/anzx/bluestone/issues"
+    },
+    "homepage": "https://github.com/anzx/bluestone#readme",
+    "devDependencies": {
+        "turbo": "^1.8.3"
+    },
+    "dependencies": {
+        "react-router-dom": "^6.13.0"
+    }
+}
