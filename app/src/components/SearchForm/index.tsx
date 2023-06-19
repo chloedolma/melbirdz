@@ -22,7 +22,7 @@ export function SearchForm() {
     event.preventDefault();
     dispatch({ type: "toggleIsLoading", isLoading: true });
 
-    fetch(`http://localhost:4000/api/v1/bird?name=${search}`)
+    fetch(`http://localhost:4000/api/v1/birds?name=${search}`)
       .then()
       .then((response) => response.json())
       .then((payload) => dispatch({ type: "update", payload }))

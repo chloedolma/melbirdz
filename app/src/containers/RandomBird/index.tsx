@@ -11,7 +11,7 @@ export function RandomBird() {
   useEffect(() => {
     dispatch({ type: "toggleIsLoading", isLoading: true });
 
-    fetch("http://localhost:4000/api/v1/bird")
+    fetch("http://localhost:4000/api/v1/birds")
       .then((response) => response.json())
       .then((payload) => dispatch({ type: "update", payload }))
       .catch(console.error)
