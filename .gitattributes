@@ -1,0 +1,2 @@
+# Prevents diff being expanded for pnpm-lock.yaml file
+/pnpm-lock.yaml linguist-generated=true
